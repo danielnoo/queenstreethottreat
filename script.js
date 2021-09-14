@@ -98,4 +98,8 @@ formEl.addEventListener('submit', function(event){
   let randSelection = Math.floor(Math.random() * options.length);
 
   console.log(options[randSelection].title);
+
+  const results = document.querySelector('.results');
+
+  results.innerHTML = `<h2 class="choice">${options[randSelection].title} </h2>`
 })
